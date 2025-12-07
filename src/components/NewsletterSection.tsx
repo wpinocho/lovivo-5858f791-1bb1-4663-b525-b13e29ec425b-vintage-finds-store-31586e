@@ -29,17 +29,17 @@ export const NewsletterSection = () => {
                   Thanks for subscribing!
                 </h3>
                 <p className="text-muted-foreground">
-                  You'll receive our best offers and promotions soon.
+                  You'll receive our latest vintage finds and exclusive offers soon.
                 </p>
               </div>
             ) : (
               <div className="space-y-6">
                 <div className="space-y-2">
                   <h3 className="text-2xl font-bold text-foreground">
-                    Want promotional emails?
+                    Explore More Vintage Finds
                   </h3>
                   <p className="text-lg text-muted-foreground">
-                    Subscribe to our newsletter and get exclusive offers
+                    Get early access to new arrivals and exclusive vintage drops
                   </p>
                 </div>
                 
@@ -62,9 +62,9 @@ export const NewsletterSection = () => {
                   <Button 
                     type="submit"
                     disabled={logic.isSubmitting}
-                    className="sm:w-auto"
+                    className="sm:w-auto bg-primary hover:bg-primary/90"
                   >
-                    {logic.isSubmitting ? 'Subscribing...' : 'Subscribe'}
+                    {logic.isSubmitting ? 'Joining...' : 'Explore Finds'}
                   </Button>
                 </form>
                 
